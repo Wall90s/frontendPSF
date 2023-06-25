@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1;0,200;0,300;0,500;0,700;1,1;1,100;1,300;1,500;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.form input {
+  min-width: 30%;
+  min-height: 30pt;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.form button {
+  min-height: 22pt;
+  width: 18%;
+}

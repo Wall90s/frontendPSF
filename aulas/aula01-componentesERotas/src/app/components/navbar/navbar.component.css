@@ -1,0 +1,22 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FF8FAB;
+  height: 4rem;
+  box-shadow: #883955 0 2px 20px;
+  margin-bottom: 2rem;
+}
+
+div a {
+  margin: 0;
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: 600;
+  color: #FFE5EC;
+ transition: 0.25s;
+}
+
+div a:hover{
+  color: #883955;
+}
