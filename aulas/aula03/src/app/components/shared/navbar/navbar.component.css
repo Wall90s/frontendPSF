@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  font-size: 30px;
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menu a:hover {
+  font-size: 32px;
+}
