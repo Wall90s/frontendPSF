@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.animais {
+  width: 300px;
+  margin: 5px;
+  border: 1px solid #EEE;
+  font-size: 30px;
+  background: rgb(10, 32, 143);
+  color: white;
+}
+
