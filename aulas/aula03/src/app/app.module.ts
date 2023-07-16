@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { LoginComponent } from './components/views/login/login.component';
 import { ContatoComponent } from './components/views/contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddAnimalComponent } from './components/views/add-animal/add-animal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,15 @@ import { HttpClientModule } from '@angular/common/http';
     CadastroComponent,
     NavbarComponent,
     LoginComponent,
-    ContatoComponent
+    ContatoComponent,
+    AddAnimalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
