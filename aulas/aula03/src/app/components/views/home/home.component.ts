@@ -14,18 +14,17 @@ export class HomeComponent implements OnInit {
   constructor(private animalService: AnimalService) { }
 
   public animais!: Animal[];
-  private destroy$: Subject<void> = new Subject<void>();
+  public animaisExoticos!: Animal[];
+
 
   ngOnInit(): void {
-    // interval(5000).subscribe(() => {
-
-    // })
-
-    this.animalService.buscarAnimais()
-      .subscribe((response: Animal[]) => {
+    this.animalService.buscarAnimais().subscribe((response: Animal[]) => {
         this.animais = response;
-        console.log(this.animais);
       });
+
+      this.animalService.buscarAnimaisExoticos().subscribe((response: Animal[]) => {
+        this.animaisExoticos = response;
+      })
   }
 }
 

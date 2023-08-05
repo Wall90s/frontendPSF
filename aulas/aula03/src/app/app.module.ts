@@ -11,6 +11,7 @@ import { ContatoComponent } from './components/views/contato/contato.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddAnimalComponent } from './components/views/add-animal/add-animal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AnimaisResgatadosComponent } from './components/views/animais-resgatados/animais-resgatados.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     ContatoComponent,
     AddAnimalComponent,
+    AnimaisResgatadosComponent,
   ],
   imports: [
     BrowserModule,

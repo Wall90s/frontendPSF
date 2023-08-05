@@ -10,6 +10,8 @@ export class OninitOndestroyComponent implements OnInit, OnDestroy {
   public texto!: string;
   public text: string = "abc";
 
+  constructor() { }
+
   ngOnInit(): void {
     console.log('To vivo')
   }

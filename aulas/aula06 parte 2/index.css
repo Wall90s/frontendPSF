@@ -73,6 +73,7 @@ button {
     max-width: 40%;
     max-height: 40%;
     border-radius: 50%;
+    object-fit: cover;
 
     -webkit-box-shadow: 10px 7px 38px 19px rgba(28, 144, 227, 1);
     -moz-box-shadow: 10px 7px 38px 19px rgba(28, 144, 227, 1);

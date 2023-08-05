@@ -11,8 +11,8 @@ export class Pessoa {
   styleUrls: ['./two-way-data-binding.component.css']
 })
 export class TwoWayDataBindingComponent {
-  public pessoa: Pessoa = {
-    nome: '',
-    email: ''
-  }
+
+  public nome!: string;
+  public email!: string;
+
 }

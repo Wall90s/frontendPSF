@@ -20,6 +20,26 @@ export class AnimalService {
     )
   }
 
+  buscarAnimaisResgatados(): Observable<Animal[]> {
+    return this.http
+    .get<Animal[]>("http://localhost:8050/listar-animais")
+    .pipe(
+      map((res: Animal[]) => {
+        return res;
+      })
+    )
+  }
+
+  buscarAnimaisExoticos(): Observable<Animal[]> {
+    return this.http
+    .get<Animal[]>("http://localhost:8050/listar-animais")
+    .pipe(
+      map((res: Animal[]) => {
+        return res;
+      })
+    )
+  }
+
   addAnimal(animal: Animal): Observable<string> {
     return  this.http.post<string>("http://localhost:8050/adicionar-animal", animal);
   }
