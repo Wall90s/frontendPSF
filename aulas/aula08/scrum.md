@@ -1,9 +1,9 @@
-# Scrum Framework
+# Scrum Framework (Framework de metodo agil)
 
 ### Scrum team - (Squad/Time) Formado por:
-    PO (Product Owner)
+    Product Owner (PO)
     Desenvolvedores
-    Scrum Master
+    Scrum Master (SM) - Agile Master (AM)
 
 ### Sprint
     Tempo de desenvolvimento que dura entre 1 a 4 semanas
