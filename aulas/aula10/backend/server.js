@@ -16,9 +16,25 @@ app.get('/pagamentos', async (req, res) => {
     }
 })
 
+app.get('/saldo-consolidado', async (req, res) => {
+    try {
+        let dataReferencia = req.query.data
+        let pagamentos = await Pagamento.find({dataPagamento: dataReferencia})
+
+        let lucroDoDia = 0
+
+        for (const pagamento of pagamentos) {
+            lucroDoDia += pagamento.valorPagamento
+        }
+
+        return res.status(200).json({lucroDoDia, pagamentos})
+    } catch (error) {
+        return res.status(500).json(error)
+    }
+})
+
 app.post('/pagamentos', async (req, res) => {
     let pagamento = { ...req.body }
-    pagamento.dataPagamento = Date()
 
     try {
         await Pagamento.create(pagamento)
