@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+
+<div>
+  <input type="text" [(ngModel)]="descricao" placeholder="descrição">
+  <input type="date" [(ngModel)]="dataPagamento">
+  <select [(ngModel)]="tipoPagamento">
+    <option value="C">Crédito</option>
+    <option value="D">Débito</option>
+  </select>
+  <input type="number" [(ngModel)]="valorPagamento" placeholder="">
+  <button (click)="cadastrarPagamento()">cadastrar</button>
+</div>

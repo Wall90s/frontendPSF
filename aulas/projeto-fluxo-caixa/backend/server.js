@@ -4,8 +4,10 @@ const port = 8080
 const mongoose = require('mongoose')
 const connectionString = 'mongodb+srv://wall:tZtSXIXAQrvKm3OI@appdb.rw5ogbw.mongodb.net/?retryWrites=true&w=majority'
 const Pagamento = require('./models/pagamento')
+const cors = require ('cors')
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/pagamentos', async (req, res) => {
     try {
